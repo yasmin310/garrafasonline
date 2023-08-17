@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Loja</title>
+</head>
+<body>
+    <header class="cabeçalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__imagem"></label>
+            <ul class="lista-menu"></ul>
+                <li type="circle" class="lista-menu__titulo">Garrafinhas Personalizadas</li>
+                <li type="circle" class="lista-menu__item"><a href="#" class="lista-menu__link">Filmes/Series</a></li>
+                <li type="circle" class="lista-menu__item"><a href="#" class="lista-menu__link">Jogos</a></li>
+                <li type="circle" class="lista-menu__item"><a href="#" class="lista-menu__link">Personagens</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="banner">
+        <h2 class="banner__titulo">Garrafas do seu estilo</h2>
+        <input type="search" class="banner__pesquisa" placeholder="Para estar entre ass estrelas mire a lua">
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Confira</h2>
+        <div class="swiper">
+            <div class="swiper-pagination"></div>
+            <div class="swipper-wrapper">
+                <div class="swiper-slide"><img src="que coisa.jpg"alt="livro-1"></div>
+                <div class="swiper-slide"><img src="academy.jpg"alt="livro-2"></div>
+                <div class="swiper-slide"><img src="saco.jpg"alt="livro-3"></div>
+                <div class="swiper-slide"><img src="aventura.jpg"alt="livro-4"></div>
+            </div>
+           <div class="swiper-pagination"></div>
+           <div class="swiper-button-prev"></div>
+           <div class="swiper-button-next"></div>
+       </div>
+    </section>
+
+    <section class="card">
+        <div class="card_descrição">
+        </div>
+    </section>
+    <section class="topicos">
+        <h2 class="topicos__titulos">Acesse</h2>
+    <ul class="topicos__listas">
+         <li class="topicos__itens">
+            <a href="#" class="topicos__link">Nosso instagram</a>
+         </li>
+    </ul>
+</section>
+
+<section class="contato">
+    <h2 class="contato__titulo">Mais novidades a caminho</h2>
+    <p class="contato__texto">confira em nosso Instagram acima:</p>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+</section>
+
+<button id="botao">Modelos</button>
+<script>
+    document.getElementById("botao").addEventListener("click", function() {
+       window.location.href = "garrafinha.html"; 
+    });
+</script>
+
+<script src="https://cnd.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+            const swiper = new Swiper('.swiper',{
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el:'.swiper-pagination',
+                type:'bullets',
+            },
+            });
+        </script>
+    </body>
+</html>

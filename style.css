@@ -1,0 +1,162 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fcf9f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.cabeçalho {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: relative;
+}
+
+.container__botao {
+    display: none;
+}
+
+.container__imagem {
+    background: url('menu-icon.png') no-repeat center center;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.lista-menu {
+    list-style-type: circle;
+    margin-top: 10px;
+}
+
+.lista-menu__titulo {
+    font-weight: bold;
+}
+
+.lista-menu__item {
+    margin: 5px 0;
+}
+
+.lista-menu__link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.lista-menu__link:hover {
+    color: #ff9900;
+}
+
+.banner {
+    background-image: url('banner-image.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+}
+
+.banner__titulo {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.banner__pesquisa {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.carrossel {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.carrossel__titulo {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.swiper-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.swiper-slide {
+    width: 33.33%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+
+.topicos {
+    background-color: #ff9900;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.topicos__titulos {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.topicos__link {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.contato {
+    padding: 20px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+}
+
+.contato__titulo {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contato__email {
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+#botao {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#botao:hover {
+    background-color: #e57300;
+}
+
